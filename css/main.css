@@ -1,24 +1,12 @@
-.calculator {
-	background: #D7DCDF;
-	border-bottom-left-radius: 5%;
-	border-bottom-right-radius: 5%;
-	height: 512px;
-	margin: 0 auto;
-	position: relative;
-	max-width: 400px;
-	width: 100%;
-}
-
-.gradient {
-	background: rgba(138,142,147,0.88);
-	background: -moz-linear-gradient(top, rgba(138,142,147,0.88) 3%, rgba(255,255,255,0.3) 23%, rgba(255,255,255,0.85) 39%, rgba(255,255,255, 0.67) 47.1%, rgba(238,241,246,0) 70.8%);
-	background: -webkit-gradient(left top, left bottom, color-stop(3%, rgba(138,142,147,0.88)), color-stop(23%, rgba(255,255,255,0.3)), color-stop(39%, rgba(255,255,255,0.85)), color-stop(47.1%, rgba(238,241,246,0.97)), color-stop(70.8%, rgba(238,241,246,0)));
-	background: -webkit-linear-gradient(top, rgba(138,142,147,0.88) 3%, rgba(255,255,255,0.3) 23%, rgba(255,255,255,0.85) 39%, rgba(255,255,255, 0.67) 47.1%, rgba(238,241,246,0) 70.8%);
-	background: -o-linear-gradient(top, rgba(138,142,147,0.88) 3%, rgba(255,255,255,0.3) 23%, rgba(255,255,255,0.85) 39%, rgba(255,255,255, 0.67) 47.1%, rgba(238,241,246,0) 70.8%);
-	background: -ms-linear-gradient(top, rgba(138,142,147,0.88) 3%, rgba(255,255,255,0.3) 23%, rgba(255,255,255,0.85) 39%, rgba(255,255,255, 0.67) 47.1%, rgba(238,241,246,0) 70.8%);
-	background: linear-gradient(to bottom, rgba(138,142,147,0.88) 3%, rgba(255,255,255,0.3) 23%, rgba(255,255,255,0.85) 39%, rgba(255,255,255, 0.67) 47.1%, rgba(238,241,246,0) 70.8%);
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#8a8e93', endColorstr='#eef1f6', GradientType=0 );
-	height: 100px;
+html,
+body {
+	background: #f2f2f2;
+	font-family: "Open Sans", "Helvetica Neue", Arial, Helvetica, Verdana, sans-serif;
+	font-size: 16px;
+	line-height: 1.6;
+	margin: 0;
+	min-height: 100vh;
+	vertical-align: baseline;
 }
 
 button {
@@ -38,6 +26,125 @@ button {
 	text-transform: uppercase;
 	transition: opacity 0.3s ease;
 	vertical-align: middle;
+}
+
+.page-content {
+	padding-top: 50px;
+}
+
+/* Default hero styles */
+.hero {
+	align-items: center;
+	background-color: #616161;
+	border-bottom: 1px solid #ffffff;
+	display: flex;
+	flex-direction: column;
+	height: 250px;
+	justify-content: center;
+	text-align: center;
+}
+
+/* Hero h1 */
+.hero h1,
+.hero-content h1 {
+	color: #ecf0f1;
+	font-size: 48px;
+	margin-bottom: 30px;
+	margin-top: 0;
+	position: relative;
+}
+
+.hero h1:before {
+	background-color: #ecf0f1;
+	bottom: -10px;
+	content: '';
+	display: block;
+	height: 1px;
+	left: 15%;
+	position: absolute;
+	width: 70%;
+}
+
+.hero h3 {
+	color: #ffffff;
+	font-weight: 300;
+	margin-top: 5px;
+}
+
+/* Hero link */
+.hero-home-link {
+	color: #ecf0f1;
+	font-size: 24px;
+	display: block;
+	padding-left: 30px;
+	position: relative;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+
+.hero-home-link:before {
+	background: url(../images/arrow-left.svg) no-repeat center center;
+	background-size: 20px;
+	content: '';
+	display: block;
+	height: 20px;
+	left: 0;
+	position: absolute;
+	top: 10px;
+	transition: left 0.2s ease;
+	width: 20px;
+}
+
+.hero-home-link:hover:before {
+	left: -2px;
+}
+
+/* Calculator */
+.calculator {
+	background: #D7DCDF;
+	border-bottom-left-radius: 5%;
+	border-bottom-right-radius: 5%;
+	-webkit-box-shadow: 6px 3px 16px rgba(0,0,0, 0.2);
+	-moz-box-shadow: 6px 3px 16px rgba(0,0,0, 0.2);
+	box-shadow: 6px 3px 16px rgba(0,0,0, 0.2);
+	height: 512px;
+	margin: 0 auto;
+	max-width: 400px;
+	position: relative;
+	width: 100%;
+
+}
+
+.gradient {
+	background: rgba(138,142,147,0.88);
+	background: -moz-linear-gradient(top, rgba(138,142,147,0.88) 3%, rgba(255,255,255,0.3) 23%, rgba(255,255,255,0.85) 39%, rgba(255,255,255, 0.67) 47.1%, rgba(238,241,246,0) 70.8%);
+	background: -webkit-gradient(left top, left bottom, color-stop(3%, rgba(138,142,147,0.88)), color-stop(23%, rgba(255,255,255,0.3)), color-stop(39%, rgba(255,255,255,0.85)), color-stop(47.1%, rgba(238,241,246,0.97)), color-stop(70.8%, rgba(238,241,246,0)));
+	background: -webkit-linear-gradient(top, rgba(138,142,147,0.88) 3%, rgba(255,255,255,0.3) 23%, rgba(255,255,255,0.85) 39%, rgba(255,255,255, 0.67) 47.1%, rgba(238,241,246,0) 70.8%);
+	background: -o-linear-gradient(top, rgba(138,142,147,0.88) 3%, rgba(255,255,255,0.3) 23%, rgba(255,255,255,0.85) 39%, rgba(255,255,255, 0.67) 47.1%, rgba(238,241,246,0) 70.8%);
+	background: -ms-linear-gradient(top, rgba(138,142,147,0.88) 3%, rgba(255,255,255,0.3) 23%, rgba(255,255,255,0.85) 39%, rgba(255,255,255, 0.67) 47.1%, rgba(238,241,246,0) 70.8%);
+	background: linear-gradient(to bottom, rgba(138,142,147,0.88) 3%, rgba(255,255,255,0.3) 23%, rgba(255,255,255,0.85) 39%, rgba(255,255,255, 0.67) 47.1%, rgba(238,241,246,0) 70.8%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#8a8e93', endColorstr='#eef1f6', GradientType=0 );
+	height: 100px;
+}
+
+.screen-container {
+	padding: 15px;
+}
+
+.screen {
+	align-items: center;
+	background-color: rgba(255,255,255, 0.8);
+	border: 1px solid #cccccc;
+	-moz-box-shadow: inset 10px 10px 3px -6px rgba(138,141,146, 0.6);
+	-webkit-box-shadow: inset 10px 10px 3px -6px rgba(138,141,146, 0.6);
+	box-shadow: inset 10px 10px 3px -6px rgba(138,141,146, 0.6);
+	color: rgba(138,141,146,0.6);
+	display: flex;
+	font-family: sans-serif;
+	font-size: 34px;
+	height: 50px;
+	justify-content: flex-end;
+	padding: 0 10px;
 }
 
 .button-container {
@@ -64,13 +171,13 @@ button {
 .key {
 	align-items: center;
 	border-radius: 5px;
-	box-shadow: 0 0 0 2px rgba(0,0,0, .50);
+	box-shadow: 0 0 0 2px rgba(0,0,0, 0.50);
 	display: flex;
 	height: 50px;
-	width: 25%;
+	justify-content: center;
 	margin-right: 10px;
 	max-width: 85px;
-	justify-content: center;
+	width: 25%;
 }
 
 .key:nth-child(4n) {
@@ -94,22 +201,4 @@ button {
 	margin-right: 0;
 	max-width: 75%;
 	width: 100%;
-}
-
-.screen-container {
-	padding: 15px;
-}
-
-.screen {
-	align-items: center;
-	border: 1px solid #cccccc;
-	display: flex;
-	background: #ffffff;
-	padding: 5px 10px;
-	height: 50px;
-	justify-content: flex-end;
-
-	-webkit-box-shadow: inset 10px 10px 3px -6px rgba(138,141,146,0.6);
-	-moz-box-shadow: inset 10px 10px 3px -6px rgba(138,141,146,0.6);
-	box-shadow: inset 10px 10px 3px -6px rgba(138,141,146,0.6);
 }
