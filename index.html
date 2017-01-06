@@ -13,41 +13,42 @@
     <a href="/md-projects" class="hero-home-link">Projects Home</a>
 </section>
 <section class="page-content">
-<div class="calculator">
+<div id="calculator" class="calculator">
 <div class="gradient"></div>
     <div class="screen-container">
-    <div class="screen">0</div>
+        <div id="screen" class="screen"></div>
     </div>
     <div class="button-container">
         <div class="row first">
-            <button class="key clear">c</button>
-            <button class="key del">d</button>
-            <button class="key multiply">*</button>
+            <button data-action="clear" class="key clear">c</button>
+            <button data-action="del" class="key del">d</button>
+            <button data-action="multiply" class="key multiply">*</button>
         </div>
         <div class="row">
-            <button class="key seven">7</button>
-            <button class="key eight">8</button>
-            <button class="key nine">9</button>
-            <button class="key subtract">-</button>
+            <button data-action="7" class="key seven">7</button>
+            <button data-action="8" class="key eight">8</button>
+            <button data-action="9" class="key nine">9</button>
+            <button data-action="subtract" class="key subtract">-</button>
         </div>
         <div class="row">
-            <button class="key four">4</button>
-            <button class="key five">5</button>
-            <button class="key six">6</button>
-            <button class="key addition">+</button>
+            <button data-action="4" class="key four">4</button>
+            <button data-action="5" class="key five">5</button>
+            <button data-action="6" class="key six">6</button>
+            <button data-action="addition" class="key addition">+</button>
         </div>
         <div class="row">
-            <button class="key one">1</button>
-            <button class="key two">2</button>
-            <button class="key three">3</button>
-            <button class="key equal">=</button>
+            <button data-action="1" class="key one">1</button>
+            <button data-action="2" class="key two">2</button>
+            <button data-action="3" class="key three">3</button>
+            <button data-action="equal" class="key equal">=</button>
         </div>
         <div class="row last">
-            <button class="key zero">0</button>
-            <button class="key decimal">.</button>
+            <button data-action="0" class="key zero">0</button>
+            <button data-action="." class="key decimal">.</button>
         </div>
     </div>
 </div>
 </section>
+<script src="js/calculator.js"></script>
 </body>
 </html>
